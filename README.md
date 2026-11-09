@@ -5,7 +5,7 @@
 
 An academic project page exploring how reasoning-guided learning turns limited real-environment interactions into fast, reusable decision capabilities in JEV models.
 
-[View the published page](https://serve.nutshellai.cn/publish/auto/rji-showcase-20261102/system-one-rsi-v31.html) · [Edit the article](idea.pub.md)
+[View the published page](https://binary-husky.github.io/qwen-jev-rsi/) · [Edit the article](idea.pub.md)
 
 ## View locally
 
@@ -18,6 +18,8 @@ python3 -m http.server 8000
 Visit http://localhost:8000. The page supports Chinese and English (`?lang=zh` / `?lang=en`), embedded figures, and interactive OODA explanations. Videos and supporting data use external public URLs and require network access.
 
 ## Edit the article
+
+The deployed HTML was refreshed from [the current CDN page](https://serve.nutshellai.cn/publish/auto/rji-showcase-20261102/index.html) on 2026-11-09. The Markdown and synchronization baseline retain the earlier editing state; reconcile changed HTML blocks before applying further Markdown edits. The sync tool protects independently changed HTML blocks from overwrite.
 
 `idea.pub.md` is the text-editing source. `index.html` preserves the page layout, embedded images, video references, interactions, and bilingual translations.
 
