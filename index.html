@@ -237,7 +237,7 @@ const wrapper=video.closest('.video-player');
 const button=wrapper.querySelector('.video-play');
 const error=wrapper.closest('.video-card').querySelector('.media-error');
 const source=video.querySelector('source');
-const fail=()=>{error.classList.remove('hidden');button.hidden=false;video.controls=false};
+const fail=()=>{if(!source.hasAttribute('src'))return;error.classList.remove('hidden');button.hidden=false;video.controls=false};
 video.addEventListener('play',()=>videos.forEach(other=>{if(other!==video)other.pause()}));
 video.addEventListener('error',fail);
 source.addEventListener('error',fail);
