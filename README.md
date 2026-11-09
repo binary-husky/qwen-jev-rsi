@@ -15,13 +15,13 @@ Open `index.html` directly, or serve this directory:
 python3 -m http.server 8000
 ```
 
-Visit http://localhost:8000. The page supports Chinese and English (`?lang=zh` / `?lang=en`), embedded figures, and interactive OODA explanations. Videos and supporting data use external public URLs and require network access.
+Visit http://localhost:8000. The page supports Chinese and English (`?lang=zh` / `?lang=en`), CDN-hosted figures, and interactive OODA explanations. Videos and supporting data use external public URLs and require network access.
 
 ## Edit the article
 
 The deployed HTML was refreshed from [the current CDN page](https://public.agent-matrix.com/publish/auto/rji-showcase-20261102/index.html) on 2026-11-09. The Markdown and synchronization baseline retain the earlier editing state; reconcile changed HTML blocks before applying further Markdown edits. The sync tool protects independently changed HTML blocks from overwrite.
 
-`idea.pub.md` is the text-editing source. `index.html` preserves the page layout, embedded images, video references, interactions, and bilingual translations.
+`idea.pub.md` is the text-editing source. `index.html` preserves the page layout, CDN-hosted images, video references, interactions, and bilingual translations.
 
 ```bash
 python3 -m pip install -r requirements.txt
@@ -40,3 +40,5 @@ This repository is a static site with `index.html` at its root. To publish it wi
 ## Scope
 
 This repository contains the research presentation page and its editing tools. It does not include model weights or training code. Game imagery belongs to its respective owners; the page is a research presentation and does not represent an official page of the game or model providers.
+
+Images and video posters are hosted on public.agent-matrix.com. Video sources are assigned only after pressing Play. The Wukong chart includes v1z1–v4z1 and a separately identified 23.6-second historical proxy.
