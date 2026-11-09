@@ -19,7 +19,7 @@ Visit http://localhost:8000. The page supports Chinese and English (`?lang=zh` /
 
 ## Edit the article
 
-The deployed HTML was refreshed from [the current CDN page](https://serve.nutshellai.cn/publish/auto/rji-showcase-20261102/index.html) on 2026-11-09. The Markdown and synchronization baseline retain the earlier editing state; reconcile changed HTML blocks before applying further Markdown edits. The sync tool protects independently changed HTML blocks from overwrite.
+The deployed HTML was refreshed from [the current CDN page](https://public.agent-matrix.com/publish/auto/rji-showcase-20261102/index.html) on 2026-11-09. The Markdown and synchronization baseline retain the earlier editing state; reconcile changed HTML blocks before applying further Markdown edits. The sync tool protects independently changed HTML blocks from overwrite.
 
 `idea.pub.md` is the text-editing source. `index.html` preserves the page layout, embedded images, video references, interactions, and bilingual translations.
 

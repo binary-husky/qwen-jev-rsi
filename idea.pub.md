@@ -77,7 +77,7 @@ System-One RSI 将学习和执行组织为两个相互连接的回路。在线�
 **图 2｜System-One RSI 的双回路结构。**通过推理模型监督将交互经验转化为模型能力，用在线 OODA 回路连接感知、判断与行动。
 
 <!-- block:b025 -->
-[打开完整示意图 ↗](https://serve.nutshellai.cn/publish/auto/jev-figure-3dc346d9/jev-brain-v15.html)
+[打开完整示意图 ↗](https://public.agent-matrix.com/publish/auto/jev-figure-3dc346d9/jev-brain-v15.html)
 
 <!-- block:b028a -->
 图 2 的上半部分是离线学习回路。紫色的推理模型在其中承担两项工作：编写控制规则，以及对同步采集的图像与动作做多模态标注。标注结果汇入数据池（v1、v2 …），与 JEV 模型一起进入监督微调，产出的新权重再部署回在线侧。上半部分中央的蓝色框是真实环境：OODA 回路在其中执行动作，并将环境观测与动作同步记录，作为下一轮学习的材料。图中标注的 <250 ms/cycle 是这一回路的设计目标，而非每个周期都已实测达到的上限。
@@ -122,7 +122,7 @@ JEV 将环境观察转化为任务相关的结构化判断，控制器据此选�
 视频加载失败，请使用下方原片链接。
 
 <!-- block:b035 -->
-**视频 1。**将攻击预警与技能状态转化为连续战斗中的操作决策。[打开原片 ↗](https://serve.nutshellai.cn/publish/auto/jev-v2/ooda-v1-ep3-2m-20261101.mp4)
+**视频 1。**将攻击预警与技能状态转化为连续战斗中的操作决策。[打开原片 ↗](https://public.agent-matrix.com/publish/auto/jev-v2/ooda-v1-ep3-2m-20261101.mp4)
 
 <!-- block:b036 -->
 ### 绝区零：基础模型的实时决策BASE
@@ -131,7 +131,7 @@ JEV 将环境观察转化为任务相关的结构化判断，控制器据此选�
 视频加载失败，请使用下方原片链接。
 
 <!-- block:b038 -->
-**视频 2。**展示任务适配前，基础模型与控制规则协同运行的表现。[打开原片 ↗](https://serve.nutshellai.cn/publish/auto/jev-v2/ooda-base-ep4-310-425-20261101.mp4)
+**视频 2。**展示任务适配前，基础模型与控制规则协同运行的表现。[打开原片 ↗](https://public.agent-matrix.com/publish/auto/jev-v2/ooda-base-ep4-310-425-20261101.mp4)
 
 <!-- block:b039 -->
 两段录像来自不同 episode、不同时间窗口，片长不同，属于行为观察展示，不是同状态逐帧 A/B 或因果对照。均未包含结算页，不标注结算评级。
@@ -212,7 +212,7 @@ DP7 配置下，四问题 fan-out 的单轮耗时约为 **230 ms**。该记录�
 视频加载失败，请使用下方原片链接。
 
 <!-- block:b061 -->
-**视频 3。**在复杂战斗环境中，通过受击预测与 OODA 回路持续响应。[打开原片 ↗](https://serve.nutshellai.cn/publish/auto/wukong-videos/wukong-v2-best-ep.mp4)
+**视频 3。**在复杂战斗环境中，通过受击预测与 OODA 回路持续响应。[打开原片 ↗](https://public.agent-matrix.com/publish/auto/wukong-videos/wukong-v2-best-ep.mp4)
 
 <!-- block:b062 -->
 ### 悟空：受击预测驱动的闪避wukong-v1
@@ -221,13 +221,13 @@ DP7 配置下，四问题 fan-out 的单轮耗时约为 **230 ms**。该记录�
 视频加载失败，请使用下方原片链接。
 
 <!-- block:b064 -->
-**视频 4。**将画面中的危险信号转化为低延迟闪避决策。[打开原片 ↗](https://serve.nutshellai.cn/publish/auto/wukong-videos/wukong-v1-ep130s.mp4)
+**视频 4。**将画面中的危险信号转化为低延迟闪避决策。[打开原片 ↗](https://public.agent-matrix.com/publish/auto/wukong-videos/wukong-v1-ep130s.mp4)
 
 <!-- block:b065 -->
-另有 [10 秒短演示 ↗](https://serve.nutshellai.cn/publish/auto/wukong-videos/wukong-demo10s-game.mp4)，快速了解感知、判断与闪避的连续过程。
+另有 [10 秒短演示 ↗](https://public.agent-matrix.com/publish/auto/wukong-videos/wukong-demo10s-game.mp4)，快速了解感知、判断与闪避的连续过程。
 
 <!-- block:b066 -->
-**图 4｜动态环境中的感知与响应。**面对快速变化的战斗画面，System-One RSI 将任务判断接入持续运行的 OODA 回路。 [查看原尺寸图片 ↗](https://serve.nutshellai.cn/publish/auto/wukong-videos/wukong-v2-shot-420.jpg)
+**图 4｜动态环境中的感知与响应。**面对快速变化的战斗画面，System-One RSI 将任务判断接入持续运行的 OODA 回路。 [查看原尺寸图片 ↗](https://public.agent-matrix.com/publish/auto/wukong-videos/wukong-v2-shot-420.jpg)
 
 <!-- block:b067 -->
 ### 两版运行记录
@@ -246,7 +246,7 @@ DP7 配置下，四问题 fan-out 的单轮耗时约为 **230 ms**。该记录�
 **表 3。**Recorded episode duration：本批 V1/V2 从进入战斗计时至控制器检测到复战菜单，不含加载时间，不是精确死亡时刻。数值依据项目提供的两版各十个逐局值复算，不代表独立原始日志审计。
 
 <!-- block:b070 -->
-两版终止检测阈值不同（V1 为 0.35，V2 为 0.65），选点指标也不同。以上仅呈现版本运行记录，不作严格可比或因果结论，也不计算跨口径倍数。[查看逐局提供值与复算汇总 ↗](https://serve.nutshellai.cn/publish/auto/rji-showcase-20261102/wukong-durations-v3.json)
+两版终止检测阈值不同（V1 为 0.35，V2 为 0.65），选点指标也不同。以上仅呈现版本运行记录，不作严格可比或因果结论，也不计算跨口径倍数。[查看逐局提供值与复算汇总 ↗](https://public.agent-matrix.com/publish/auto/rji-showcase-20261102/wukong-durations-v3.json)
 
 <!-- block:b071 -->
 ### 历史基线：不同动作条件
@@ -287,10 +287,10 @@ base attack 采用每 4 tick 前进一步的控制器，合并 dodge≤2、≤3�
 本页对应的逐样本概率、对局清单与数据说明已公开，可用于复核表格中的数值和模型定义。
 
 <!-- block:b081 -->
-- [悟空逐局时长与复算汇总 · JSON ↗](https://serve.nutshellai.cn/publish/auto/rji-showcase-20261102/wukong-durations-v3.json)<br>两版各十局，由项目提供值复算；包含指标定义与比较限制。
-- [逐样本概率 · JSON ↗](https://serve.nutshellai.cn/publish/auto/jev-v2/jev260-bundle.json)<br>BASE、V1、V2 各 260 条 label / pred / probs / nll。
-- [对局清单 · CSV ↗](https://serve.nutshellai.cn/publish/auto/jev-v2/jev-episodes.csv)<br>Episode、停止原因、日志时间与录像长度。
-- [数据口径说明 · Markdown ↗](https://serve.nutshellai.cn/publish/auto/jev-v2/jev260-readme.md)<br>数据划分、选点方式与部署延迟的适用范围。
+- [悟空逐局时长与复算汇总 · JSON ↗](https://public.agent-matrix.com/publish/auto/rji-showcase-20261102/wukong-durations-v3.json)<br>两版各十局，由项目提供值复算；包含指标定义与比较限制。
+- [逐样本概率 · JSON ↗](https://public.agent-matrix.com/publish/auto/jev-v2/jev260-bundle.json)<br>BASE、V1、V2 各 260 条 label / pred / probs / nll。
+- [对局清单 · CSV ↗](https://public.agent-matrix.com/publish/auto/jev-v2/jev-episodes.csv)<br>Episode、停止原因、日志时间与录像长度。
+- [数据口径说明 · Markdown ↗](https://public.agent-matrix.com/publish/auto/jev-v2/jev260-readme.md)<br>数据划分、选点方式与部署延迟的适用范围。
 
 <!-- block:b082 -->
 模型身份与版本说明

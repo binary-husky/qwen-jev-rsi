@@ -162,8 +162,8 @@
     "attrs": {}
   },
   "b025": {
-    "markdown": "[打开完整示意图 ↗](https://serve.nutshellai.cn/publish/auto/jev-figure-3dc346d9/jev-brain-v15.html)",
-    "html_hash": "1895f679b959b29ec0e6ae543ec6f6d9f0bc5e7bfb4c501cce02077ee8478655",
+    "markdown": "[打开完整示意图 ↗](https://public.agent-matrix.com/publish/auto/jev-figure-3dc346d9/jev-brain-v15.html)",
+    "html_hash": "07971ec143a405796ae637144263602bbaada668121b478a414cf1dd34ea70f7",
     "tag": "p",
     "attrs": {
       "class": "figure-resource"
@@ -235,7 +235,7 @@
     }
   },
   "b035": {
-    "markdown": "**视频 1。**将攻击预警与技能状态转化为连续战斗中的操作决策。[打开原片 ↗](https://serve.nutshellai.cn/publish/auto/jev-v2/ooda-v1-ep3-2m-20261101.mp4)",
+    "markdown": "**视频 1。**将攻击预警与技能状态转化为连续战斗中的操作决策。[打开原片 ↗](https://public.agent-matrix.com/publish/auto/jev-v2/ooda-v1-ep3-2m-20261101.mp4)",
     "html_hash": "54ac94bca4f225fe210e3d3e367957b03125de463e0db612f14c2d4b2a40073c",
     "tag": "figcaption",
     "attrs": {}
@@ -258,7 +258,7 @@
     }
   },
   "b038": {
-    "markdown": "**视频 2。**展示任务适配前，基础模型与控制规则协同运行的表现。[打开原片 ↗](https://serve.nutshellai.cn/publish/auto/jev-v2/ooda-base-ep4-310-425-20261101.mp4)",
+    "markdown": "**视频 2。**展示任务适配前，基础模型与控制规则协同运行的表现。[打开原片 ↗](https://public.agent-matrix.com/publish/auto/jev-v2/ooda-base-ep4-310-425-20261101.mp4)",
     "html_hash": "d0346eb92f8ccae38280540d436830b782b7940dff072dbe145114d702de2436",
     "tag": "figcaption",
     "attrs": {}
@@ -415,7 +415,7 @@
     }
   },
   "b061": {
-    "markdown": "**视频 3。**在复杂战斗环境中，通过受击预测与 OODA 回路持续响应。[打开原片 ↗](https://serve.nutshellai.cn/publish/auto/wukong-videos/wukong-v2-best-ep.mp4)",
+    "markdown": "**视频 3。**在复杂战斗环境中，通过受击预测与 OODA 回路持续响应。[打开原片 ↗](https://public.agent-matrix.com/publish/auto/wukong-videos/wukong-v2-best-ep.mp4)",
     "html_hash": "cc152f0bdcf589a6ff231251f760ecef721561d110fcf93591ff812b9adc6980",
     "tag": "figcaption",
     "attrs": {}
@@ -438,21 +438,21 @@
     }
   },
   "b064": {
-    "markdown": "**视频 4。**将画面中的危险信号转化为低延迟闪避决策。[打开原片 ↗](https://serve.nutshellai.cn/publish/auto/wukong-videos/wukong-v1-ep130s.mp4)",
+    "markdown": "**视频 4。**将画面中的危险信号转化为低延迟闪避决策。[打开原片 ↗](https://public.agent-matrix.com/publish/auto/wukong-videos/wukong-v1-ep130s.mp4)",
     "html_hash": "8638acaebc2965a3f46c25b0c8bdfb4dc2a961a967bada134d8d2da1151f94e5",
     "tag": "figcaption",
     "attrs": {}
   },
   "b065": {
-    "markdown": "另有 [10 秒短演示 ↗](https://serve.nutshellai.cn/publish/auto/wukong-videos/wukong-demo10s-game.mp4)，快速了解感知、判断与闪避的连续过程。",
-    "html_hash": "42db65a119d0f190d76b6e16091afc8111b0288afd59a68968288d895da55d6b",
+    "markdown": "另有 [10 秒短演示 ↗](https://public.agent-matrix.com/publish/auto/wukong-videos/wukong-demo10s-game.mp4)，快速了解感知、判断与闪避的连续过程。",
+    "html_hash": "981c0adc5df7b6c620eaf7e6d37d348aee5308954f2e2b8c06219acf39729b07",
     "tag": "p",
     "attrs": {
       "class": "note"
     }
   },
   "b066": {
-    "markdown": "**图 4｜动态环境中的感知与响应。**面对快速变化的战斗画面，System-One RSI 将任务判断接入持续运行的 OODA 回路。 [查看原尺寸图片 ↗](https://serve.nutshellai.cn/publish/auto/wukong-videos/wukong-v2-shot-420.jpg)",
+    "markdown": "**图 4｜动态环境中的感知与响应。**面对快速变化的战斗画面，System-One RSI 将任务判断接入持续运行的 OODA 回路。 [查看原尺寸图片 ↗](https://public.agent-matrix.com/publish/auto/wukong-videos/wukong-v2-shot-420.jpg)",
     "html_hash": "1f546e3f0bd0cde099cb92fab40988cb000c16a0e73e4069a815b071acb3ef38",
     "tag": "figcaption",
     "attrs": {}
@@ -478,7 +478,7 @@
     }
   },
   "b070": {
-    "markdown": "两版终止检测阈值不同（V1 为 0.35，V2 为 0.65），选点指标也不同。以上仅呈现版本运行记录，不作严格可比或因果结论，也不计算跨口径倍数。[查看逐局提供值与复算汇总 ↗](https://serve.nutshellai.cn/publish/auto/rji-showcase-20261102/wukong-durations-v3.json)",
+    "markdown": "两版终止检测阈值不同（V1 为 0.35，V2 为 0.65），选点指标也不同。以上仅呈现版本运行记录，不作严格可比或因果结论，也不计算跨口径倍数。[查看逐局提供值与复算汇总 ↗](https://public.agent-matrix.com/publish/auto/rji-showcase-20261102/wukong-durations-v3.json)",
     "html_hash": "35f9340bfe875cc1f48fa311ab1180ee4a89625eab3cad1f763e6fd5f7f2ff2b",
     "tag": "p",
     "attrs": {
@@ -554,7 +554,7 @@
     "attrs": {}
   },
   "b081": {
-    "markdown": "- [悟空逐局时长与复算汇总 · JSON ↗](https://serve.nutshellai.cn/publish/auto/rji-showcase-20261102/wukong-durations-v3.json)<br>两版各十局，由项目提供值复算；包含指标定义与比较限制。\n- [逐样本概率 · JSON ↗](https://serve.nutshellai.cn/publish/auto/jev-v2/jev260-bundle.json)<br>BASE、V1、V2 各 260 条 label / pred / probs / nll。\n- [对局清单 · CSV ↗](https://serve.nutshellai.cn/publish/auto/jev-v2/jev-episodes.csv)<br>Episode、停止原因、日志时间与录像长度。\n- [数据口径说明 · Markdown ↗](https://serve.nutshellai.cn/publish/auto/jev-v2/jev260-readme.md)<br>数据划分、选点方式与部署延迟的适用范围。",
+    "markdown": "- [悟空逐局时长与复算汇总 · JSON ↗](https://public.agent-matrix.com/publish/auto/rji-showcase-20261102/wukong-durations-v3.json)<br>两版各十局，由项目提供值复算；包含指标定义与比较限制。\n- [逐样本概率 · JSON ↗](https://public.agent-matrix.com/publish/auto/jev-v2/jev260-bundle.json)<br>BASE、V1、V2 各 260 条 label / pred / probs / nll。\n- [对局清单 · CSV ↗](https://public.agent-matrix.com/publish/auto/jev-v2/jev-episodes.csv)<br>Episode、停止原因、日志时间与录像长度。\n- [数据口径说明 · Markdown ↗](https://public.agent-matrix.com/publish/auto/jev-v2/jev260-readme.md)<br>数据划分、选点方式与部署延迟的适用范围。",
     "html_hash": "3fc9f09d43cb945fb24825846b069923564ea62060e8c170ad34f9f0d64daafe",
     "tag": "ul",
     "attrs": {
