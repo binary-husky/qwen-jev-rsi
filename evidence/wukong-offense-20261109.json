@@ -1,13 +1,13 @@
 {
   "source": "Coordination agent 88817e01; exp/v4z1/attack_d23.md; blackboard d9e04b72-6c1",
-  "verification": "Provided summary; raw episode files not independently audited here",
+  "verification": "New-batch CSV statistics recomputed; archive hashes verified. Original run directories deleted; earlier v3/v4 report not independently recomputed.",
   "columns": [
     "模型",
     "权重",
     "局数",
     "胜率（胜局 / 总局数）",
     "平均记录时长 / s",
-    "战斗跨度中位 / s",
+    "中位时长 / s（分批定义）",
     "胜利局平均 TTK / s"
   ],
   "rows": [
@@ -26,7 +26,7 @@
       10,
       "20.0% (2/10)",
       "74.1",
-      "57.3",
+      "57.2",
       "139.7"
     ],
     [
@@ -58,8 +58,9 @@
     ]
   ],
   "notes": [
-    "平均记录时长采用 summary.duration_s；中位数采用战斗跨度；TTK 为胜利局平均时长。三列统计口径不同，不应互相替代；无胜局时不报告 TTK。",
+    "base / v1z1 / v2z1 的平均值、中位数和胜利局平均 TTK 均由 summary.duration_s 计算；旧批 v3z1 / v4z1 的中位数采用战斗跨度，两批中位数定义不同。无胜局时不报告 TTK。",
     "base / v1z1 / v2z1 为 2026-11-09 的新批次，各 10 局，使用 attack2_heal、d23、500 ms 冷却。v3z1 / v4z1 来自更早的各 15 局批次，使用 d23；两批配置不同，加载时间与运行时段也会影响时长，不作跨批次严格可比或因果结论。v1z1 的 2/10 与 v2z1 的 3/10 不足以证明显著差异。",
-    "base 的 0/10 胜伴随输出退化：99.8% 的帧为 choice=0，攻击支路几乎未触发。此组作为模型不可用基线保留，不作为异常局剔除。"
+    "base 的 0/10 胜伴随输出退化：99.8% 的帧为 choice=0，攻击支路几乎未触发。此组作为模型不可用基线保留，不作为异常局剔除。",
+    "新批结果已由留存 launcher 日志整理的逐次尝试表复算；原始 summary.json、steps.jsonl、META 与图像已于清理中删除，无法完成逐帧独立复核。旧批 v3z1 / v4z1 依据留存报告，战斗跨度中位数无法从现存包重算。延迟守卫及重置失败曾触发同 seed 重跑；最终保留样本的 discarded=false 不代表全过程没有剔除。"
   ]
 }
