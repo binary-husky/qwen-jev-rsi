@@ -35,7 +35,7 @@ After syncing Chinese text, update the corresponding English entries in the inli
 
 ## GitHub Pages
 
-This repository is a static site with `index.html` at its root. To publish it with GitHub Pages, select **Settings → Pages → Deploy from a branch → main → / (root)**. The expected URL is https://binary-husky.github.io/qwen-jev-rsi/ once Pages is enabled and deployment succeeds.
+This repository is a static site with `index.html` at its root. To publish it with GitHub Pages, select **Settings → Pages → Deploy from a branch → gh-pages → / (root)**. The expected URL is https://binary-husky.github.io/qwen-jev-rsi/ once Pages is enabled and deployment succeeds.
 
 ## Scope
 
