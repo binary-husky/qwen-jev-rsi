@@ -41,4 +41,10 @@ This repository is a static site with `index.html` at its root. To publish it wi
 
 This repository contains the research presentation page and its editing tools. It does not include model weights or training code. Game imagery belongs to its respective owners; the page is a research presentation and does not represent an official page of the game or model providers.
 
-Images and video posters are hosted on public.agent-matrix.com. Video sources are assigned only after pressing Play. The Wukong chart includes v1z1–v4z1 and a separately identified 23.6-second historical proxy.
+Images and video posters are hosted on public.agent-matrix.com. Video sources are assigned only after pressing Play. The Wukong chart includes wk-rsi-v1–wk-rsi-v4 and a separately identified 23.6-second historical proxy.
+
+## Figure display names
+
+Display names use `wk-rsi-base`, `wk-rsi-v1` through `wk-rsi-v4`, and `zzz-rsi-base`, `zzz-rsi-v1`, `zzz-rsi-v2`. Adapter identifiers and archived evidence remain unchanged. The stationary reference is not a model base. ZZZ offline `source_snapshot` and online `s20` remain distinct protocols.
+
+Editable generators are under `scripts/figures/`. Iteration diagrams use `v{k}` and `v{k+1}` for the current and next model; these are iteration variables. Run the iteration and duration scripts with Python (Matplotlib and Pillow for iteration figures). The ZZZ trajectory generator also requires seaborn and NumPy and accepts `--hud-dir PATH --out PATH`; its source HUD logs remain in the research evidence archive.
