@@ -12,14 +12,15 @@ def brain():
 def book():
     return '<path d="M0-42Q-27-55-64-43V49Q-28 37 0 50Q28 37 64 49V-43Q27-55 0-42V50 M-64-34L-73-30V59Q-30 47 0 60Q30 47 73 59V-30L64-34"/><path d="M-51-22H-16 M-51-9H-16 M-51 4H-24 M16-22H51 M16-9H51 M16 4H43 M-51 20H-16 M16 20H51" stroke-width="3"/>'
 
-def cyclist():
-    return '<circle cx="-48" cy="34" r="29"/><circle cx="52" cy="34" r="29"/><path d="M-48 34L-22-10L8 34H-48 M-22-10H36L8 34 M36-10L52 34 M31-24H44 M-30-14H-15"/><circle cx="16" cy="-61" r="11"/><path d="M8-47L-18-26L5-10L-5 26 M8-47L25-24L41-22 M-18-26L-23-10 M-5 26L7 29" stroke-width="6"/>'
+def swimmer():
+    return '<circle cx="42" cy="-20" r="12"/><path d="M-53 9L-22-13L8-8L23 5 M-22-13L-3-43L26-59 M8-8L-6 14 M-53 9L-74 3" stroke-width="6"/><path d="M-78 31Q-65 20-52 31T-26 31T0 31T26 31T52 31T78 31 M-78 52Q-65 41-52 52T-26 52T0 52T26 52T52 52T78 52" stroke-width="3"/>'
+
 
 def head():
     return '<path d="M-48 62L-36 31C-61 5-59-39-31-56C-6-72 30-56 35-29L40-12L51 3L38 8V25Q35 37 14 34L13 62 M-36 31Q-14 45 13 34"/><path d="M9-12Q18-7 26-12 M29 20H38"/><circle cx="56" cy="-48" r="7"/><circle cx="76" cy="-70" r="12"/>'
 
 def practice():
-    return '<g transform="translate(-10 3) scale(.9)">'+cyclist()+'</g><circle cx="65" cy="-54" r="22" fill="white"/><path d="M54-54L62-46L77-63"/>'
+    return '<g transform="translate(-10 3) scale(.9)">'+swimmer()+'</g><circle cx="65" cy="-54" r="22" fill="white"/><path d="M54-54L62-46L77-63"/>'
 
 def memory():
     return brain()+'<path d="M-43-13H43 M-39 24H38" stroke="white" stroke-width="13"/><path d="M-43-13H43 M-39 24H38"/><g fill="white"><circle cx="-43" cy="-13" r="8"/><circle cy="-13" r="8"/><circle cx="43" cy="-13" r="8"/><circle cx="-39" cy="24" r="8"/><circle cx="8" cy="24" r="8"/><circle cx="38" cy="24" r="8"/></g>'
@@ -55,7 +56,7 @@ for lang,labels in LABELS.items():
        '<rect width="1760" height="650" fill="white"/><g font-family="Inter, Arial, Noto Sans CJK SC, Microsoft YaHei, sans-serif">']
     xs=[340,640,940,1240,1540]
     for x in xs:p.append(f'<path d="M{x} 275V348" stroke="#c9d1d9" stroke-width="2" stroke-dasharray="3 7" stroke-linecap="round"/>')
-    icons=[[head,book,practice,memory,cyclist],[brain,document,rsi,network,realtime]]
+    icons=[[head,book,practice,memory,swimmer],[brain,document,rsi,network,realtime]]
     for row,(y,label) in enumerate([(155,'Human'),(465,'Language Model')]):
         p.append(f'<rect x="18" y="{y-26}" width="176" height="52" rx="9" fill="#f0f3f6"/><text x="106" y="{y+7}" text-anchor="middle" fill="{INK}" font-size="21" font-weight="600">{label}</text>')
         for i,x in enumerate(xs):
