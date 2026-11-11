@@ -5,7 +5,7 @@ from html import escape
 ROOT=Path(__file__).parent
 DATA=json.loads((ROOT/'means.json').read_text())['rows']
 for lang in ['zh','en']:
- title='平均完成用时 / s（仅统计完成局）' if lang=='zh' else 'Mean completion time / s (completed episodes only)'
+ title='平均完成用时（s，仅统计完成局）' if lang=='zh' else 'Mean completion time (s, completed episodes only)'
  fail='失败' if lang=='zh' else 'Failed'
  note='无完成记录时标注失败，不绘制数值柱。时间越短越好。' if lang=='zh' else 'No completion: marked Failed, without a numerical bar. Lower is better.'
  p=['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 480" role="img" aria-labelledby="title desc">',f'<title id="title">{escape(title)}</title><desc id="desc">{escape(note)}</desc>','<rect width="1100" height="480" fill="white"/><g font-family="Arial, Noto Sans CJK SC, sans-serif" fill="#344153">',f'<text x="65" y="32" font-size="19">{escape(title)}</text>']

@@ -34,15 +34,15 @@ sns.set_theme(
     style="whitegrid",
     font="DejaVu Sans",
     rc={
-        "figure.facecolor": "#fcfcfb",
-        "axes.facecolor": "#fcfcfb",
-        "savefig.facecolor": "#fcfcfb",
+        "figure.facecolor": "#ffffff",
+        "axes.facecolor": "#ffffff",
+        "savefig.facecolor": "#ffffff",
         "axes.edgecolor": "#b9b7ae",
-        "grid.color": "#e8e7e2",
-        "axes.labelcolor": "#52514e",
-        "text.color": "#0b0b0b",
-        "xtick.color": "#52514e",
-        "ytick.color": "#52514e",
+        "grid.color": "#e4e8ec",
+        "axes.labelcolor": "#344153",
+        "text.color": "#344153",
+        "xtick.color": "#344153",
+        "ytick.color": "#344153",
     },
 )
 
@@ -69,9 +69,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--hud-dir", required=True)
     ap.add_argument("--out", required=True)
+    ap.add_argument("--language", choices=["zh","en"], default="en")
     args = ap.parse_args()
     os.makedirs(args.out, exist_ok=True)
     eps = load(args.hud_dir)
+    if args.language == "zh":
+        plt.rcParams["font.family"] = "Noto Sans CJK JP"
 
     fig = plt.figure(figsize=(13.0, 7.2), dpi=170)
     gs = fig.add_gridspec(2, 1, height_ratios=[4.4, 1.25], hspace=0.10)
@@ -110,7 +113,7 @@ def main():
 
     ax.set_xlim(0, 305)
     ax.set_ylim(-0.03, 1.05)
-    ax.set_ylabel("Opponent HP (normalised per episode)")
+    ax.set_ylabel("对手生命值（每局归一化）" if args.language == "zh" else "Opponent HP (normalized per episode)")
     # no title (removed on request)
     ax.legend(loc="upper right", fontsize=9, ncol=1, frameon=True,
               framealpha=0.9, edgecolor="#e4e3de", handlelength=2.4)
@@ -121,7 +124,7 @@ def main():
     strip.set_xlim(0, 320)
     strip.set_ylim(-0.6, len(ARMS) - 0.4)
     strip.set_yticks([])
-    strip.set_xlabel("Time since detected battle start (seconds)")
+    strip.set_xlabel("对局时间（s）" if args.language == "zh" else "Episode time (s)")
     for s in ("top", "right", "left"):
         strip.spines[s].set_visible(False)
     strip.tick_params(length=0)
