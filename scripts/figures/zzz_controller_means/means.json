@@ -1,0 +1,35 @@
+{
+  "metric": "completed-episode mean seconds",
+  "rows": [
+    [
+      "Amalgam",
+      207.2,
+      190.8
+    ],
+    [
+      "Butcher",
+      214.0,
+      163.0
+    ],
+    [
+      "Pompey",
+      245.0,
+      194.0
+    ],
+    [
+      "Priest",
+      309.0,
+      293.0
+    ],
+    [
+      "Sweeper",
+      278.0,
+      242.0
+    ],
+    [
+      "Girtab",
+      null,
+      243.0
+    ]
+  ]
+}
