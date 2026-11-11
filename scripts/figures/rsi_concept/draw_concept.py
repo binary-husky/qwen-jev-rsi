@@ -47,15 +47,15 @@ def realtime():
     return '<path d="M-28-54C-86-30-78 40-30 57 M28 54C86 30 78-40 30-57 M-30 42V57H-46 M30-42V-57H46"/><rect x="-22" y="-70" width="44" height="38" rx="6"/><circle cy="-51" r="10"/><circle cy="48" r="21"/><path d="M0 17V27 M0 69V79 M-31 48H-21 M21 48H31 M-22 26L-15 33 M15 63L22 70 M22 26L15 33 M-15 63L-22 70" stroke-width="7"/><path d="M-16 1H-5L1-13L8 13L14 1H24"/>'
 
 LABELS={
-'zh':[['深度思考','理论概念理解','有针对性地练习','肌肉记忆','学会某项运动技能'],['推理模型','模糊描述的先验知识','System One RSI','JEV 模型','完成高频实时任务']],
-'en':[['Deep thinking','Conceptual understanding','Targeted practice','Muscle memory','Acquire a motor skill'],['Reasoning model','Loosely described prior knowledge','System One RSI','JEV model','High-frequency real-time tasks']]}
+'zh':[['深度思考','理论概念理解','教师模糊语言引导下的针对性练习','肌肉记忆','学会某项运动技能'],['推理模型','模糊描述的先验知识','System One RSI','JEV 模型','完成高频实时任务']],
+'en':[['Deep thinking','Conceptual understanding','Targeted practice guided by a teacher’s imprecise language','Muscle memory','Acquire a motor skill'],['Reasoning model','Loosely described prior knowledge','System One RSI','JEV model','High-frequency real-time tasks']]}
 for lang,labels in LABELS.items():
     p=['<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="650" viewBox="0 0 1760 650" role="img" aria-labelledby="title desc">',
-       '<title id="title">Human learning and System One RSI</title><desc id="desc">Human: deep thinking, conceptual understanding, targeted practice, muscle memory, motor skills. Language Model: reasoning, prior knowledge, few-sample RSI, JEV, real-time tasks.</desc>',
+       '<title id="title">Human learning and System One RSI</title><desc id="desc">Human: deep thinking, conceptual understanding, targeted practice guided by a teacher’s imprecise language, muscle memory, motor skills. Language Model: reasoning, prior knowledge, few-sample RSI, JEV, real-time tasks.</desc>',
        '<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1L8 5L1 9" fill="none" stroke="#788695" stroke-width="1.6" stroke-linejoin="round"/></marker></defs>',
        '<rect width="1760" height="650" fill="white"/><g font-family="Inter, Arial, Noto Sans CJK SC, Microsoft YaHei, sans-serif">']
     xs=[340,640,940,1240,1540]
-    for x in xs:p.append(f'<path d="M{x} 275V348" stroke="#c9d1d9" stroke-width="2" stroke-dasharray="3 7" stroke-linecap="round"/>')
+    for x in xs:p.append(f'<path d="M{x} 332V365" stroke="#c9d1d9" stroke-width="2" stroke-dasharray="3 7" stroke-linecap="round"/>')
     icons=[[head,book,practice,memory,swimmer],[brain,document,rsi,network,realtime]]
     for row,(y,label) in enumerate([(155,'Human'),(465,'Language Model')]):
         p.append(f'<rect x="18" y="{y-26}" width="176" height="52" rx="9" fill="#f0f3f6"/><text x="106" y="{y+7}" text-anchor="middle" fill="{INK}" font-size="21" font-weight="600">{label}</text>')
@@ -64,6 +64,7 @@ for lang,labels in LABELS.items():
             p.append(f'<g transform="translate({x} {y})" fill="none" stroke="{col}" color="{col}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">{icons[row][i]()}</g>')
             text=labels[row][i]
             lines=[text]
+            if row==0 and i==2:lines=["教师模糊语言引导下的","针对性练习"] if lang=="zh" else ["Targeted practice guided", "by a teacher’s", "imprecise language"]
             if lang=='en' and i==1:lines=['Conceptual','understanding'] if row==0 else ['Loosely described','prior knowledge']
             if lang=='en' and i==4:lines=['Acquire a motor skill'] if row==0 else ['High-frequency','real-time tasks']
             for j,line in enumerate(lines):p.append(f'<text x="{x}" y="{y+107+j*29}" text-anchor="middle" font-size="{24 if lang=="zh" else 22}" font-weight="500" fill="{INK}">{escape(line)}</text>')
