@@ -1,0 +1,133 @@
+{
+  "metric": "in-game completion seconds read from retained result frames",
+  "baseline_controller": "a6ad1ad",
+  "revised_controller": "a3e7b6d",
+  "revised_display": "zzz-rsi-v3",
+  "weight_identity": "not independently verified; baseline not mapped to earlier zzz-rsi-v2",
+  "rows": [
+    {
+      "opponent": "Amalgam",
+      "opponent_zh": "未知复合侵蚀体",
+      "baseline_completed_s": [
+        204,
+        200,
+        218,
+        210,
+        204
+      ],
+      "revised_completed_s": [
+        217,
+        180,
+        168,
+        194,
+        195
+      ],
+      "baseline_unfinished": 0,
+      "revised_unfinished": 0,
+      "revised_invalid": 0
+    },
+    {
+      "opponent": "Butcher",
+      "opponent_zh": "初生死路屠夫",
+      "baseline_completed_s": [
+        215,
+        213
+      ],
+      "revised_completed_s": [
+        163
+      ],
+      "baseline_unfinished": 0,
+      "revised_unfinished": 0,
+      "revised_invalid": 0
+    },
+    {
+      "opponent": "Pompey",
+      "opponent_zh": "霸主侵蚀体·庞培",
+      "baseline_completed_s": [
+        264,
+        226
+      ],
+      "revised_completed_s": [
+        207,
+        187,
+        188
+      ],
+      "baseline_unfinished": 0,
+      "revised_unfinished": 1,
+      "revised_invalid": 1
+    },
+    {
+      "opponent": "Priest",
+      "opponent_zh": "秽息司祭",
+      "baseline_completed_s": [
+        309
+      ],
+      "revised_completed_s": [
+        293
+      ],
+      "baseline_unfinished": 1,
+      "revised_unfinished": 1,
+      "revised_invalid": 0
+    },
+    {
+      "opponent": "Sweeper",
+      "opponent_zh": "猎血清道夫",
+      "baseline_completed_s": [
+        297,
+        259
+      ],
+      "revised_completed_s": [
+        229,
+        255
+      ],
+      "baseline_unfinished": 0,
+      "revised_unfinished": 0,
+      "revised_invalid": 0
+    },
+    {
+      "opponent": "Girtab",
+      "opponent_zh": "基塔布鲁",
+      "baseline_completed_s": [],
+      "revised_completed_s": [
+        257,
+        229
+      ],
+      "baseline_unfinished": 2,
+      "revised_unfinished": 0,
+      "revised_invalid": 0
+    },
+    {
+      "opponent": "Hunter",
+      "opponent_zh": "彷徨猎手",
+      "baseline_completed_s": [],
+      "revised_completed_s": [],
+      "baseline_unfinished": 1,
+      "revised_unfinished": 2,
+      "revised_invalid": 0
+    },
+    {
+      "opponent": "Twins",
+      "opponent_zh": "冥宁芙·双子",
+      "baseline_completed_s": [],
+      "revised_completed_s": [],
+      "baseline_unfinished": null,
+      "revised_unfinished": 2,
+      "revised_invalid": 0
+    },
+    {
+      "opponent": "Bringer",
+      "opponent_zh": "牲鬼·布林格",
+      "baseline_completed_s": [],
+      "revised_completed_s": [],
+      "baseline_unfinished": null,
+      "revised_unfinished": 2,
+      "revised_invalid": 0
+    }
+  ],
+  "notes": [
+    "Unpaired; unequal samples; completion times condition on success.",
+    "Non-completions are not assigned a time or classified as in-control deaths.",
+    "Per-run META matches the stated commit for 39 included attempts; 26 completed result frames inspected.",
+    "Question set and behavior tree both changed; same service endpoint does not establish unchanged weights."
+  ]
+}
