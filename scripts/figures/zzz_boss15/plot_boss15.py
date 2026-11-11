@@ -110,7 +110,7 @@ def main():
 
     ax.set_xlim(0, 305)
     ax.set_ylim(-0.03, 1.05)
-    ax.set_ylabel("Boss HP (normalised per episode)")
+    ax.set_ylabel("Opponent HP (normalised per episode)")
     # no title (removed on request)
     ax.legend(loc="upper right", fontsize=9, ncol=1, frameon=True,
               framealpha=0.9, edgecolor="#e4e3de", handlelength=2.4)
