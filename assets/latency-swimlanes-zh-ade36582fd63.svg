@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 850" role="img" aria-labelledby="title desc">
+<title id="title">错峰推理与独立执行</title>
+<desc id="desc">三个推理线程错峰读取最新画面，结果依次交给决策与动作线程。理想结果间隔为 L/3，单次推理耗时仍为 L。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#718096" stroke-width="1.2"/></marker></defs>
+<rect width="1400" height="850" fill="white"/><g font-family="Arial,Noto Sans CJK SC,Microsoft YaHei,sans-serif" fill="#344153">
+<text x="34" y="42" font-size="28" fill="#344153" text-anchor="start">错峰推理与独立执行</text>
+<text x="34" y="76" font-size="19" fill="#697582" text-anchor="start">n = 3 的理想时序示意；L 为一次完整推理周期</text>
+<rect x="24" y="138" width="1348" height="62" rx="0" fill="#f5f7fa" stroke="none"/>
+<text x="42" y="174" font-size="20" fill="#344153" text-anchor="start">画面采集</text>
+<rect x="24" y="218" width="1348" height="62" rx="0" fill="#fafbfc" stroke="none"/>
+<text x="42" y="254" font-size="20" fill="#344153" text-anchor="start">推理线程 0</text>
+<rect x="24" y="298" width="1348" height="62" rx="0" fill="#f5f7fa" stroke="none"/>
+<text x="42" y="334" font-size="20" fill="#344153" text-anchor="start">推理线程 1</text>
+<rect x="24" y="378" width="1348" height="62" rx="0" fill="#fafbfc" stroke="none"/>
+<text x="42" y="414" font-size="20" fill="#344153" text-anchor="start">推理线程 2</text>
+<rect x="24" y="458" width="1348" height="62" rx="0" fill="#f5f7fa" stroke="none"/>
+<text x="42" y="494" font-size="20" fill="#344153" text-anchor="start">策略决策</text>
+<rect x="24" y="538" width="1348" height="62" rx="0" fill="#fafbfc" stroke="none"/>
+<text x="42" y="574" font-size="20" fill="#344153" text-anchor="start">动作执行</text>
+<path d="M230,115 L230,601" fill="none" stroke="#dce2e8" stroke-width="1.6" stroke-dasharray="5 5"/>
+<text x="230" y="108" font-size="17" fill="#697582" text-anchor="middle">0</text>
+<path d="M365.0,115 L365.0,601" fill="none" stroke="#dce2e8" stroke-width="1.6" stroke-dasharray="5 5"/>
+<text x="365.0" y="108" font-size="17" fill="#697582" text-anchor="middle">L/3</text>
+<path d="M500.0,115 L500.0,601" fill="none" stroke="#dce2e8" stroke-width="1.6" stroke-dasharray="5 5"/>
+<text x="500.0" y="108" font-size="17" fill="#697582" text-anchor="middle">2L/3</text>
+<path d="M635,115 L635,601" fill="none" stroke="#dce2e8" stroke-width="1.6" stroke-dasharray="5 5"/>
+<text x="635" y="108" font-size="17" fill="#697582" text-anchor="middle">L</text>
+<path d="M770.0,115 L770.0,601" fill="none" stroke="#dce2e8" stroke-width="1.6" stroke-dasharray="5 5"/>
+<text x="770.0" y="108" font-size="17" fill="#697582" text-anchor="middle">4L/3</text>
+<path d="M905.0,115 L905.0,601" fill="none" stroke="#dce2e8" stroke-width="1.6" stroke-dasharray="5 5"/>
+<text x="905.0" y="108" font-size="17" fill="#697582" text-anchor="middle">5L/3</text>
+<path d="M1040,115 L1040,601" fill="none" stroke="#dce2e8" stroke-width="1.6" stroke-dasharray="5 5"/>
+<text x="1040" y="108" font-size="17" fill="#697582" text-anchor="middle">2L</text>
+<path d="M1310.0,115 L1310.0,601" fill="none" stroke="#dce2e8" stroke-width="1.6" stroke-dasharray="5 5"/>
+<text x="1310.0" y="108" font-size="17" fill="#697582" text-anchor="middle">8L/3</text>
+<text x="1370" y="132" font-size="17" fill="#697582" text-anchor="end">时间</text>
+<rect x="230.0" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="263.75" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="297.5" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="331.25" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="365.0" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="398.75" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="432.5" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="466.25" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="500.0" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="533.75" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="567.5" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="601.25" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="635.0" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="668.75" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="702.5" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="736.25" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="770.0" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="803.75" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="837.5" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="871.25" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="905.0" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="938.75" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="972.5" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="1006.25" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="1040.0" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="1073.75" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="1107.5" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="1141.25" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="1175.0" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="1208.75" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="1242.5" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="1276.25" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<rect x="1310.0" y="153" width="9" height="25" rx="2" fill="#a8b5c3" stroke="none"/>
+<text x="999.5" y="141" font-size="17" fill="#697582" text-anchor="start">持续更新共享画面</text>
+<rect x="230.0" y="230" width="398" height="33" rx="5" fill="#4c6982" stroke="none"/>
+<text x="428.5" y="253" font-size="18" fill="white" text-anchor="middle">推理  ·  L</text>
+<rect x="635.0" y="230" width="398" height="33" rx="5" fill="#e2e7ed" stroke="none"/>
+<text x="833.5" y="253" font-size="18" fill="#697582" text-anchor="middle">推理</text>
+<path d="M230.0,184 L230.0,227" fill="none" stroke="#718096" stroke-width="1.6" stroke-dasharray="5 5" marker-end="url(#arrow)"/>
+<circle cx="230.0" cy="229" r="4" fill="#4c6982"/>
+<path d="M635.0,264 L635.0,467" fill="none" stroke="#4c6982" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="635.0" y="472" width="26" height="28" rx="5" fill="#4c6982" stroke="none"/>
+<path d="M661.0,502 L661.0,548" fill="none" stroke="#4c6982" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="661.0" y="552" width="61" height="28" rx="5" fill="#4c6982" stroke="none"/>
+<rect x="365.0" y="310" width="398" height="33" rx="5" fill="#409b98" stroke="none"/>
+<text x="563.5" y="333" font-size="18" fill="white" text-anchor="middle">推理  ·  L</text>
+<rect x="770.0" y="310" width="398" height="33" rx="5" fill="#e2e7ed" stroke="none"/>
+<text x="968.5" y="333" font-size="18" fill="#697582" text-anchor="middle">推理</text>
+<path d="M365.0,184 L365.0,307" fill="none" stroke="#718096" stroke-width="1.6" stroke-dasharray="5 5" marker-end="url(#arrow)"/>
+<circle cx="365.0" cy="309" r="4" fill="#409b98"/>
+<path d="M770.0,344 L770.0,467" fill="none" stroke="#409b98" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="770.0" y="472" width="26" height="28" rx="5" fill="#409b98" stroke="none"/>
+<path d="M796.0,502 L796.0,548" fill="none" stroke="#409b98" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="796.0" y="552" width="61" height="28" rx="5" fill="#409b98" stroke="none"/>
+<rect x="500.0" y="390" width="398" height="33" rx="5" fill="#8056b3" stroke="none"/>
+<text x="698.5" y="413" font-size="18" fill="white" text-anchor="middle">推理  ·  L</text>
+<rect x="904.9999999999999" y="390" width="398" height="33" rx="5" fill="#e2e7ed" stroke="none"/>
+<text x="1103.5" y="413" font-size="18" fill="#697582" text-anchor="middle">推理</text>
+<path d="M500.0,184 L500.0,387" fill="none" stroke="#718096" stroke-width="1.6" stroke-dasharray="5 5" marker-end="url(#arrow)"/>
+<circle cx="500.0" cy="389" r="4" fill="#8056b3"/>
+<path d="M904.9999999999999,424 L904.9999999999999,467" fill="none" stroke="#8056b3" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="904.9999999999999" y="472" width="26" height="28" rx="5" fill="#8056b3" stroke="none"/>
+<path d="M930.9999999999999,502 L930.9999999999999,548" fill="none" stroke="#8056b3" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="930.9999999999999" y="552" width="61" height="28" rx="5" fill="#8056b3" stroke="none"/>
+<path d="M722,582 L741,582 L741,508" fill="none" stroke="#718096" stroke-width="1.6" stroke-dasharray="5 5" marker-end="url(#arrow)"/>
+<text x="747" y="536" font-size="16" fill="#697582" text-anchor="start">回执</text>
+<path d="M635,619 L770.0,619" fill="none" stroke="#718096" stroke-width="1.6"/>
+<path d="M635,612 L635,626" fill="none" stroke="#718096" stroke-width="1.6"/>
+<path d="M770.0,612 L770.0,626" fill="none" stroke="#718096" stroke-width="1.6"/>
+<text x="702.5" y="647" font-size="19" fill="#344153" text-anchor="middle">结果间隔 ≈ L/3</text>
+<text x="34" y="640" font-size="19" fill="#344153" text-anchor="start">启动时读取最新画面与历史帧</text>
+<rect x="24" y="687" width="440" height="130" rx="5" fill="#f5f7fa" stroke="none"/>
+<text x="41" y="719" font-size="21" fill="#344153" text-anchor="start">限制积压</text>
+<text x="41" y="753" font-size="16" fill="#344153" text-anchor="start">新调度覆盖旧调度；错过时刻则跳过。</text>
+<text x="41" y="783" font-size="16" fill="#344153" text-anchor="start">动作队列满时丢弃最早等待的动作。</text>
+<rect x="480" y="687" width="440" height="130" rx="5" fill="#f5f7fa" stroke="none"/>
+<text x="497" y="719" font-size="21" fill="#344153" text-anchor="start">按到达顺序决策</text>
+<text x="497" y="753" font-size="16" fill="#344153" text-anchor="start">结果允许乱序返回，无需等待早期请求。</text>
+<text x="497" y="783" font-size="16" fill="#344153" text-anchor="start">决策与动作各由一个线程串行处理。</text>
+<rect x="936" y="687" width="440" height="130" rx="5" fill="#f5f7fa" stroke="none"/>
+<text x="953" y="719" font-size="21" fill="#344153" text-anchor="start">分别测量延迟</text>
+<text x="953" y="753" font-size="16" fill="#344153" text-anchor="start">推理周期、决策间隔、观测至动作完成。</text>
+<text x="953" y="783" font-size="16" fill="#344153" text-anchor="start">主推理线程超出延迟预算时停止运行。</text>
+</g></svg>
